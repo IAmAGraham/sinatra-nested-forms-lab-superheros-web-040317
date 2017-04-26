@@ -14,9 +14,6 @@ class App < Sinatra::Base
         h = Superhero.new(name:hero["name"], power:hero["power"], bio:hero["bio"])
         @team.add_superhero(h)
       }
-
       erb :team
     end
-
-
 end
